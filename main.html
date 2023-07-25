@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet"/>
+    <title>Potfolio Website</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <img src="portfimage.jpg"/>
+            <h2>Skills:</h2>
+            <ul class="nav-list">
+                <li><span class="icon">🐍</span> Python</li>
+                <li><span class="icon">🛠️</span> Full-stack Development</li>
+                <li><span class="icon">🎨</span> Photoshop</li>
+                <li><span class="icon">🖌️</span> Illustrator</li>
+                <li><span class="icon">🎥</span> DaVinci Resolve</li>
+                <li><span class="icon">📷</span> Photography</li>
+                <li><span class="icon">🌐</span> Web Development</li>
+            </ul>
+            <div class="footer">
+                <a href="contact.html">Contact</a>
+            </div>
+    </nav>
+    <main>
+    <div class="container">
+        <article class="about-me">
+            <div class="textaboutme">
+                <h2>About Me:</h2>
+                <p>
+                   My name is Gabor Supper. I'm a 26-year-old with a passion for creativity, problem-solving, and full-stack engineering. Originally from Hungary, now living in the Netherlands. My journey started with graphics design, but I'm now excitedly transitioning into building robust applications and websites. When not coding, I enjoy cooking, cycling, and traveling, which fuels my soul with unforgettable experiences and a broader perspective on life. Embracing change, I continuously learn and grow, painting life's canvas with a vibrant array of achievements.
+                </p>
+            </div>
+        </article>
+        <article>
+            <h2>Projects:</h2>
+            <h3>BlackJack Game in Python</h3>
+            <p>
+                For my CS50X final project I have created a BlackJack game in Python where the user can play BlackJack in the command-line.
+
+            </p>
+            <h3>Quiz Game in Python</h3>
+            <p>
+                For my CS50P final project I have create a simple Quiz game in Python. The user can play in the command-line.
+            </p>
+        </article>
+        <article class="certifications">
+            <h2>Certifications</h2>
+            <figure>
+                <img src="CS50X.png"  onclick="enlargeImg()"
+                id="img1"/>
+                <button onclick="resetImg()">Reset</button>
+                <figcaption>Certification for completing Harvard`s CS50X. Introdcution to Computer Science</figcaption>
+            </figure>
+            <figure>
+                <img src="CS50P.png"/>
+                <figcaption>Certification for completing Harvard`s CS50P. Introduction to Programming with Python</figcaption>
+            </figure>
+        </article>
+    </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

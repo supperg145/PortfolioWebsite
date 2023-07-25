@@ -1,0 +1,85 @@
+/* styles.css */
+
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #454955;
+}
+
+/* Navigation bar styles */
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%; /* Adjust the width as needed */
+  background-color: #0D0A0B; /* Change the background color as desired */
+  color: #F3EFF5; /* Change the text color as desired */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  border: 1px solid white;
+  border-radius: 5px;}
+
+.nav-list li {
+  margin-bottom: 10px;
+}
+
+.nav-bar img{
+  border-radius: 10px;
+}
+
+.footer:hover{
+  background-color: gray;
+  border-radius: 5px;
+}
+
+/* Main content styles */
+main {
+  padding-left: 20rem; /* Adjust the padding to create space for the sidebar */
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9; /* Add a background color to distinguish the content */
+  border: 1px solid #ddd; /* Add a border for better visual separation */
+  border-radius: 5px;
+  text-align: justify;
+}
+
+.textaboutme{
+  flex:1;
+  margin-right: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.6; /* Adjust line-height for better readability */
+}
+
+.certifications figure img {
+  width: 250px; /* Adjust the image size as needed */
+  margin: 0 auto 10px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
