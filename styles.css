@@ -5,6 +5,10 @@
   padding-bottom: 0.5%;
 }
 
+.fas {
+  font-size: 2.5rem;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -65,7 +69,6 @@ body {
 main {
   padding-left: 20%; /* Adjust the padding to create space for the sidebar */
   box-sizing: border-box;
-  background-color: #fff; /* White background for the main content */
 }
 
 .container {
@@ -105,4 +108,43 @@ p {
   width: 50%; /* Adjust the image size as needed */
   margin: 0 auto 1%; /* Changed from 10px to 1% */
   object-fit: cover;
+}
+
+
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    position: absolute;
+    flex-direction: row; /* Horizontal layout for smaller screens */
+    height: auto;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .nav-bar img {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: row; /* Change to a vertical layout for smaller screens */
+    justify-content: center;
+    align-items: center;
+    line-height: 2.5%;
+  }
+
+  .nav-list li {
+    margin-bottom: 2.5%;
+    display: inline;
+  }
+
+  .certifications figure img {
+    width: 100%;
+  }
+
+  main {
+    padding: 2.5%;
+  }
+
+  .container{
+    margin-top: 150px;
+  }
 }
