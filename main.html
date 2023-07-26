@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet"/>
     <title>Potfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/445f26563b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="nav-bar">
         <img src="portfimage.jpg"/>
             <h2>Skills:</h2>
             <ul class="nav-list">
-                <li><span class="icon">🐍</span> Python</li>
-                <li><span class="icon">🛠️</span> Full-stack Development</li>
-                <li><span class="icon">🎨</span> Photoshop</li>
-                <li><span class="icon">🖌️</span> Illustrator</li>
-                <li><span class="icon">🎥</span> DaVinci Resolve</li>
-                <li><span class="icon">📷</span> Photography</li>
-                <li><span class="icon">🌐</span> Web Development</li>
+                <i class="fab fa-html5"></i>
+                <br>
+                <i class="fab fa-android"></i>
+                <br>
+                <i class="fab fa-css3-alt"></i>
+                <br>
+                <i class="fab fa-figma"></i>
+                <br>
+                <i class="fab fa-github"></i>
+                <br>
+                <i class="fab fa-python"></i>
+                <br>
+                <i class="fab fa-js"></i>
             </ul>
             <div class="footer">
-                <a href="contact.html">Contact</a>
+                <a href="contact.html" onclick="getNewPage" id="contact">Contact</a>
             </div>
     </nav>
     <main>
@@ -48,13 +58,11 @@
         <article class="certifications">
             <h2>Certifications</h2>
             <figure>
-                <img src="CS50X.png"  onclick="enlargeImg()"
-                id="img1"/>
-                <button onclick="resetImg()">Reset</button>
+                <img src="CS50X.png" class="enlarge-clickable"/>
                 <figcaption>Certification for completing Harvard`s CS50X. Introdcution to Computer Science</figcaption>
             </figure>
             <figure>
-                <img src="CS50P.png"/>
+                <img src="CS50P.png" class="enlarge-clickable"/>
                 <figcaption>Certification for completing Harvard`s CS50P. Introduction to Programming with Python</figcaption>
             </figure>
         </article>

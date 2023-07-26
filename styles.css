@@ -1,10 +1,15 @@
-/* styles.css */
-
 /* General styles */
+.fab {
+  font-family: "Font Awesome 5 Brands";
+  font-size: 2.5rem;
+  padding-bottom: 0.5%;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #454955;
+  background-color: #f2f2f2; /* Light gray background */
+  font-family: Arial, sans-serif; /* A more common sans-serif font */
 }
 
 /* Navigation bar styles */
@@ -16,70 +21,88 @@ body {
   left: 0;
   height: 100%;
   width: 20%; /* Adjust the width as needed */
-  background-color: #0D0A0B; /* Change the background color as desired */
-  color: #F3EFF5; /* Change the text color as desired */
-  padding: 20px;
+  background-color: #333; /* Dark gray background for the sidebar */
+  color: #fff; /* White text color for the sidebar */
+  padding: 2.5%; /* Changed from 20px to 2.5% */
   box-sizing: border-box;
   text-align: center;
   border-radius: 5px;
+  align-items: center;
 }
 
 .nav-list {
   list-style: none;
   padding: 0;
-  border: 1px solid white;
-  border-radius: 5px;}
+  line-height: 1.2%; /* Changed from 1rem to 1.2% */
+}
 
 .nav-list li {
-  margin-bottom: 10px;
+  margin-bottom: 1%; /* Changed from 10px to 1% */
 }
 
-.nav-bar img{
-  border-radius: 10px;
+.nav-bar img {
+  width: 80%;
+  height: 30%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1%; /* Changed from 10px to 1% */
 }
 
-.footer:hover{
-  background-color: gray;
-  border-radius: 5px;
+.footer a:hover {
+  background-color: #4CAF50; /* Green background on hover */
+  color: #fff; /* White text color on hover */
+}
+
+.footer a {
+  border: 0.1% solid #72B01D; /* Changed from 1px to 0.1% */
+  padding: 0.5% 1%; /* Changed from 5px 10px to 0.5% 1% */
+  border-radius: 4px;
+  text-decoration: none;
+  color: #72B01D;
 }
 
 /* Main content styles */
 main {
-  padding-left: 20rem; /* Adjust the padding to create space for the sidebar */
+  padding-left: 20%; /* Adjust the padding to create space for the sidebar */
   box-sizing: border-box;
+  background-color: #fff; /* White background for the main content */
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  background-color: #f9f9f9; /* Add a background color to distinguish the content */
-  border: 1px solid #ddd; /* Add a border for better visual separation */
+  padding: 2.5%; /* Changed from 20px to 2.5% */
+  margin-top: 2.5%; /* Changed from 20px to 2.5% */
+  margin-right: 2.5%; /* Changed from 20px to 2.5% */
+  margin-bottom: 2.5%; /* Changed from 20px to 2.5% */
+  background-color: #f6f6f6; /* Light gray background for content containers */
+  border: 1px solid #ddd; /* Light gray border */
   border-radius: 5px;
   text-align: justify;
 }
 
-.textaboutme{
-  flex:1;
-  margin-right: 20px;
+.textaboutme {
+  flex: 1;
+  margin-right: 2.5%; /* Changed from 20px to 2.5% */
 }
 
 h2 {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 p {
   font-size: 1.25rem;
-  line-height: 1.6; /* Adjust line-height for better readability */
+  line-height: 1.6;
+}
+
+.certifications{
+  text-align: center;
 }
 
 .certifications figure img {
-  width: 250px; /* Adjust the image size as needed */
-  margin: 0 auto 10px;
+  position: relative;
+  width: 50%; /* Adjust the image size as needed */
+  margin: 0 auto 1%; /* Changed from 10px to 1% */
   object-fit: cover;
-  border-radius: 20px;
 }
-
