@@ -3,7 +3,9 @@
   font-family: "Font Awesome 5 Brands";
   font-size: 2.5rem;
   padding-bottom: 0.5%;
+  border-radius: 5px;
 }
+
 
 .fas {
   font-size: 2.5rem;
@@ -13,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f2f2f2; /* Light gray background */
-  font-family: Arial, sans-serif; /* A more common sans-serif font */
+  font-family: 'Roboto Mono', sans-serif; /* A more common sans-serif font */
 }
 
 /* Navigation bar styles */
@@ -31,13 +33,22 @@ body {
   box-sizing: border-box;
   text-align: center;
   border-radius: 5px;
+  box-shadow: 10px 20px 20px 5px black;
+  justify-content: center;
   align-items: center;
+}
+.nav-bar h1{
+  font-size:2rem;
+  
 }
 
 .nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   list-style: none;
-  padding: 0;
-  line-height: 1.2%; /* Changed from 1rem to 1.2% */
+  letter-spacing: 15px;
+  line-height: 50px; /* Changed from 1rem to 1.2% */
 }
 
 .nav-list li {
@@ -47,9 +58,16 @@ body {
 .nav-bar img {
   width: 80%;
   height: 30%;
+  box-shadow: 0px 0px 30px 10px black;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1%; /* Changed from 10px to 1% */
+}
+
+.footer{
+  position: fixed;
+  bottom: 5%;
+
 }
 
 .footer a:hover {
@@ -123,8 +141,11 @@ p {
   .nav-bar img {
     display: none;
   }
-
+  .nav-bar h2{
+    display:none;
+  }
   .nav-list {
+    display:none;
     flex-direction: row; /* Change to a vertical layout for smaller screens */
     justify-content: center;
     align-items: center;
@@ -147,4 +168,5 @@ p {
   .container{
     margin-top: 150px;
   }
+
 }
